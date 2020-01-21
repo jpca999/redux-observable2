@@ -10,14 +10,8 @@ export function BeerList(props) {
   return (
     <div>
 
-
-    <div>
-
       <h3> Inside BeerList component  </h3>
       <p> Got {beers.length} beers </p>
-
-    </div>
-
 
 </div> );
 }
