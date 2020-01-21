@@ -22,7 +22,7 @@ export function Beers(props) {
 
 {!status && (<div>
 
-  <p> Got {data.length} beers </p>
+
   <BeerList beers = {data} />
 
 </div>)}
