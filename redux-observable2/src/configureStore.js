@@ -24,6 +24,7 @@ export default function configureStore(){
 
   const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
+  // fetchBeersEpic will be called on page load.
   // since we need to initialzie this root epic.
   const store =  createStore(rootReducer, composeEnhancers (applyMiddleware(epicMiddleware)));
 
