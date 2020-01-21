@@ -1,32 +1,21 @@
+
 import { FETCH_FULFILLED } from './beersActions';
 
-const initialState = {
+const intialState = {
   data: [],
-  loading: false
+  loading: true
 }
 
-const API = 'https://api.punkapi.com/v2/beers';
-
-export function beersReducers(state = initialState, action){
-  switch (action.type) {
+export function beersReducer ( state= intialState, action ) {
+  switch(action.type){
     case FETCH_FULFILLED: {
-      return {
-        ...state,
-      loading: false,
-      data: action.payload
-     }
-   }
-    default: return state;
+       return {
+         ...state,
+       loading: false,
+       data: action.payload
+      }
+    }
+    default: return state
   }
 
 }
-
-
-// {
-//   return ajax.getJSON(API).pipe(
-//       tap( x => console.log(x)),
-//       ignoreElements()
-
-//   )
-
-// }
