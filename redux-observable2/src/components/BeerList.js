@@ -10,8 +10,19 @@ export function BeerList(props) {
   return (
     <div>
 
-      <h3> Inside BeerList component  </h3>
-      <p> Got {beers.length} beers </p>
+      {/* {beers.map(beer =>{
+        return(
+          <li key={beer.id} className="List-item">
+            <figure className=
+
+
+          </li>
+        )
+
+      })} */}
+  <p> no of beers = {beers.length} </p>
+
+
 
 </div> );
 }
